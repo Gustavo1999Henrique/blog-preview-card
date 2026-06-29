@@ -8,12 +8,14 @@
 
 
 .container {
+    position: relative;
     background-color: var(--color-white);
-    max-width: 385px;
+    max-width: 386px;
+    min-height: 522px;
     border: 1px solid var(--color-dark);
     border-radius: 20px;
-    overflow: hidden;
     padding: 23px;
+    box-shadow: 7px 8px var(--color-dark);;
 }
 
 .estilo {
@@ -21,7 +23,7 @@
     font-size: 14px;
 }
 
-.paragrafo {
+.espacamento {
     margin-top: 16px;
 }
 
@@ -36,6 +38,22 @@
     flex-direction: column;
 }
 
+.rodape {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.foto-autor {
+    width: 32px;
+}
+
+.autor {
+    font-size: 14px;
+    font-weight: 800;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -48,7 +66,7 @@ body {
 
 main header img {
     display: block;
-    width: 100%;
+    max-width: 336px;
     border-radius: 13px;
 }
 
@@ -58,9 +76,4 @@ h1 {
     padding: 6px 12px;
     border-radius: 4px;
     font-weight: 700;
-}
-
-h2 {
-    margin-top: 16px;
-    color: var(--color-dark);
 }
